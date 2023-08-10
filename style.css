@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(211, 186, 186);
+    border-style:double
+}
+h1{
+  display: flex; 
+ /* border-color: rgb(20, 99, 37);
+ border-style:dotted; */
+  align-items: center; 
+  justify-content: center; 
+}
+
+.columns{
+        border: 3px solid red;  
+        outline: 3px solid blue;  
+        border-radius: 12px;  
+        font-size: 20px;  
+        font-weight: bold;  
+        margin: 30px;  
+        padding: 30px;  
+        outline-offset: 0.5em;  
+      }  
