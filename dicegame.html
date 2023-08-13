@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Roll a Dice Game</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Roll a Dice</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="dicegame.js" defer></script>
   </head>
   <body>
-    <h1>Let's Roll a Dice!</h1>
-    
-    <div class= "row" align="center">
-      <div class="columns">
-        <h2>Player 1</h2>
-        <img src="dice-faces/u1.jpg" alt="roll: 1" id="playerOneDice1">
-        <img src="dice-faces/u2.jpg" alt="roll: 1" id="playerOneDice2">
-      </div>
-      <div class="columns">
-        <h2>Player 2</h2>
-        <img src="dice-faces/e1.png" alt="roll: 1" id="playerTwoDice1">
-        <img src="dice-faces/e2.png" alt="roll: 1" id="playerTwoDice2">
-      </div>
-      <div class="columns">
-        <img src="" >
-        <button class="playBtn" onclick="rolldice()">Play</button>
+    <div class="flex-column">
+      <h1>Roll a Die!</h1>
+      <div class="flex-container">
+        <div>
+          <h2>Player 1 (<span id="player1Count">0</span>)</h2>
+          <img
+            src="dice-faces/u1.jpg"
+            alt="roll:1"
+            id="playerOneDice1"
+          /><br /><br />
+          <img
+            src="dice-faces/u1.jpg"
+            alt="roll:1"
+            id="playerOneDice2"
+          /><br /><br />
+          <button class="playBtn" onclick="rollDice(1)">Play</button>
+        </div>
+        <div>
+          <h2>Player 2 (<span id="player2Count">0</span>)</h2>
+          <img
+            src="dice-faces/e1.png"
+            alt="roll:1"
+            id="playerTwoDice1"
+          /><br /><br />
+          <img
+            src="dice-faces/e1.png"
+            alt="roll:1"
+            id="playerTwoDice2"
+          /><br /><br />
+          <button class="playBtn" onclick="rollDice(2)">Play</button>
+        </div>
+        <div>
+          <h2>Score</h2>
+          <h1>
+            <span id="player1Score"> 0 </span> &nbsp;-&nbsp;
+            <span id="player2Score">0</span>
+          </h1>
+          <h3 id="WinLose"></h3>
+        </div>
       </div>
     </div>
-
-    
-    
   </body>
 </html>

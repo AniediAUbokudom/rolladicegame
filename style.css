@@ -1,22 +1,47 @@
-body{
-    background-color: rgb(211, 186, 186);
-    border-style:double
-}
-h1{
-  display: flex; 
- /* border-color: rgb(20, 99, 37);
- border-style:dotted; */
-  align-items: center; 
-  justify-content: center; 
+body {
+  background-color: rgb(17, 41, 33);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSloaAyW5khZfYuUdmsrD8IoGk5vFO73F4BVW8AZonuAIm4QcY&s");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur();
+  color: rgb(192, 215, 500);
+  margin: 3px;
+  padding: 2px;
+  border-style: double;
 }
 
-.columns{
-        border: 3px solid red;  
-        outline: 3px solid blue;  
-        border-radius: 12px;  
-        font-size: 20px;  
-        font-weight: bold;  
-        margin: 30px;  
-        padding: 30px;  
-        outline-offset: 0.5em;  
-      }  
+h1 {
+  display: flex;
+  border-color: rgb(59, 79, 90);
+  border-style: solid ;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  opacity: 0.8;
+}
+.playBtn {
+  color: rgb(87, 26, 64);
+  padding: 12px; /*padding */
+  background-color: rgb(193, 224, 232);
+  font-size: 20px;
+  border: 3px solid #282020;
+  border-radius: 10px; /* Rounded borders */
+  margin: 10px;
+}
+img {
+  max-width: 100%;
+  margin: 10px;
+}
