@@ -34,5 +34,5 @@ The game is open-source, and suggestions are welcome! Eventually, I would love t
 5.	Create a pull request, explaining the changes you made.
 
 Credits
-[Aniedi Ubokudom]: Game Developer and Maintainer
+[Aniedi Ubokudom]: Developer and Maintainer
 
